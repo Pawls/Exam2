@@ -131,6 +131,137 @@ Algorithm:
     return k
 Output: The location of the highest even integer in the list
 """
+"""
+# 16
+
+Pseudo Code:
+    input: L = Li, ....., Ln: finite sequence of natural numbers
+    Algorithm:
+        for i = 1 to n:
+            if L1 > Li:
+                set L1 = Li
+    Output: L1 which is the smallest number
+    
+ 
+"""
+
+
+def smallestInt(L):
+    tempSmall = L[0]
+    for i in range(1, len(L)):
+        if tempSmall > L[i]:
+            tempSmall == L[i]
+    return tempSmall
+"""
+# 17
+
+pSEUDO Code:
+    input L = Li, ...., Ln: integers in list are not distinct
+    Algorithm:
+        for i = 1 to n:
+            if L1 < li:
+                set i to bigest position:
+    output : i which is the position of the first ocurence of the biggest number
+                
+
+"""
+def locationBig(L):
+    tempMax = L[0]
+    for i in range(1, len(L)):
+        if tempMax < L[i]:
+            tempMax = L[i]
+            r = i
+    return r
+
+"""
+# 18
+
+Pseudo Code:
+    input L = Li, .... Ln: integers in list are not in distinct order
+    Algorithm:
+        for i = 1 to n:
+            if L1 > li:
+                set i to smallest position:
+    output: i wich is the firs position of the samllest int in the list
+            
+"""
+def locationSmall(L):
+    tempSmall = L[0]   
+    o = 0
+    for i in range(1, len(L)):
+        if tempSmall > L[i]:
+            tempSmall = L[i]
+            o = i
+    return o
+
+"""
+#19
+
+psuedo code:
+    input L = Li, ...,  :three integers  
+    Algorithm:
+        for i = 1 to n:
+            if small > L[i]:
+                small = L[i]
+            if Big < L[i]:
+                big = L[i]
+            maximum = big
+            median = L[1]
+            mean = (L[1] + L[2] + L[3]) / 3
+            minn = small
+                    
+            
+"""
+def fourMs(L):    
+    Small = L[0]
+    big = L[0]
+    for i in range(1, len(L)):
+        if Small > L[i]:
+            Small == L[i]
+        elif big < L[i]:
+            big = L[i]
+        else: 
+            L[1] = L[i]
+    mean = (Small + big + L[1]) / 3
+   
+        
+    print ("maximum:")
+    print (big) 
+    print ("median:")
+    print (L[1])
+    print ("mean:")
+    print(mean)
+    print("min")
+    print (Small)
+        
+
+
+"""
+pseudo code:
+    input: Li, ...., Ln : where L is a list of integers
+    
+    algorithm:  
+        for i = 1 to n:
+            if small > L[i]:
+                small = L[i]
+            if Big < L[i]:
+                big = L[i]
+        
+
+"""
+def bounds(L):
+    small = L[0]
+    big = L[0]
+    for i in range(1, len(L)):
+        if small > L[i]:
+            small = L[i]
+        if big < L[i]:
+            big = L[i]
+    print("Smallest integer in list is ")  
+    print(small) 
+    print("Biggest integer in list is ")
+    print(big)
+
 
 def number8(self):
     k = 0
