@@ -1,6 +1,5 @@
-""" Due end of class Thursday
-
-BONUS EXAM 1
+"""
+EXAM 2
 
 NAMES: 
     Paul Davis
