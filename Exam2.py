@@ -338,3 +338,13 @@ def number33(self):
         if self[i] < self[i-1]:
             return self[i]
         
+"""
+ 41. Sort these lists using selection sort
+ a)3,5,4,1,2....1,3,5,4,2....1,2,3,5,4....1,2,3,4,5
+ b)5,4,3,2,1....1,5,4,3,2....1,2,5,4,3....1,2,3,5,4.....1,2,3,4,5
+ c)na
+ 
+"""
+"""
+42. Write the selection sort algorithm in pseudocode
+"""
