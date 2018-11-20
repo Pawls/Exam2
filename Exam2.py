@@ -131,6 +131,14 @@ Algorithm:
     return k
 Output: The location of the highest even integer in the list
 """
+
+def number8(self):
+    k = 0
+    for i in range(0, len(self)):
+        if self[i] % 2 == 0 and self[i] >= self[k]:
+            k = i
+    return k
+
 """
 # 16
 
@@ -237,6 +245,7 @@ def fourMs(L):
 
 
 """
+#20
 pseudo code:
     input: Li, ...., Ln : where L is a list of integers
     
@@ -261,14 +270,6 @@ def bounds(L):
     print(small) 
     print("Biggest integer in list is ")
     print(big)
-
-
-def number8(self):
-    k = 0
-    for i in range(0, len(self)):
-        if self[i] % 2 == 0 and self[i] >= self[k]:
-            k = i
-    return k
 
 """
 31. Devise an algorithm that finds the first term of a sequence
